@@ -1,0 +1,11 @@
+
+if (isset($_GET['passwd'])) {
+        if (hash("md5", $_GET['passwd']) == '3ccc8c56eff7de06ee9b597ae88b5df0'){
+
+       // Find the hidden DIR to get the plain text passwd or decrypt the Hash!!
+
+            echo "<script>alert('$flag')</script>";
+        } else {
+            echo "<script>alert('Wrong!');</script>";
+    }
+}
